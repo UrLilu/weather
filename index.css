@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    max-width: 100vw;
+    overflow: hidden;
+    min-height: 100%;
+    padding: 1rem;
+    font-family: 'Inter Tight', sans-serif;
+    background: url('https://static.life.ru/publications/2022/4/7/379255429021.5114.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: clamp(20rem, 90%, 44rem);
+    min-height: auto;
+    background-color: #f0f0f0bd;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    box-shadow: 0px 8px 16px ;
+    transition: all 0.3s ease;
+}
+
+h1{
+    font-size: 3rem;
+    letter-spacing: -3.16px;
+    font-weight: 700;
+}
+
+input{
+    border: 6px solid black;
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 1.125rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: -1.08px;
+}
+
+.Weather_container{
+    margin-top: 2rem;
+    flex: 1;
+}
+
+
+.date{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: rgb(83, 92, 100);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-top: 0.25rem;
+}
+
+ul{
+    margin-top: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+li{
+    list-style: none;
+    display: table;
+    font-weight: 500;
+    font-size: 1.3rem;
+    }
+
+    li>span{
+        display: table-cell;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    li>span:first-child {
+        position: relative;
+        overflow: hidden;
+    }
+    li>span:first-child::after{
+        content: "";
+        position: absolute;
+        bottom: 0.3rem;
+        margin-left: 0.5rem;
+        width: 100%;
+        border-bottom: 2px dashed black;
+    }
+    li>span+span{
+        text-align: right;
+        font-weight: 1%;
+        vertical-align: bottom;
+        padding-left: 0.5rem;
+    }
+
+    .container>img {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        border-radius: 2rem;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        color: rgb(57, 67, 63);
+        font-weight: 700;
+        font-size: 2rem;
+    }
